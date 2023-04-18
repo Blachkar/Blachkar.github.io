@@ -181,7 +181,7 @@ footer .colonne p:hover {
     footer {
 		justify-content: flex-start;
 	}
-	footer .column {
+	footer .colonne {
 		width: 80%;
 	}
 }
