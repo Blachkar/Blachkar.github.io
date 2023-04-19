@@ -4,7 +4,7 @@
 .loader {
     position: absolute;
     width: 96%;
-    height: 100%;
+    height: 200%;
     background: #DFDBDB;
     display: flex;
     justify-content: center;
