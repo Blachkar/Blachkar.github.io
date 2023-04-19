@@ -81,6 +81,7 @@ nav .profile img {
 nav .profile img:hover {
     filter: brightness(70%);
 }
+
 /*nav bar navigation*/
 nav ul {
     display: flex;
@@ -97,25 +98,24 @@ nav ul li:hover {
 }
 
 /*content page*/
-.page-content {
+.pagecontent {
     margin: 4%;
-
 }
-.page-content header {
+.pagecontent header {
     margin: 5%;
     max-width: 80%;
 }
-.page content header h1 {
+.pagecontent header h1 {
     margin: 0;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
-    font-size: 6vw;
+    font-size: 4vw;
 }
-.page-content header p {
+.pagecontent header p {
     line-height: 30px;
     color: #7c7c7c;
 }
-.page-content header button {
+.pagecontent header button {
     background: inherit;
     border: none;
     outline: none;
@@ -125,13 +125,13 @@ nav ul li:hover {
     padding-bottom: 2px;
     cursor: pointer;
 }
-.page-content header button:hover {
+.pagecontent header button:hover {
     color: #7c7c7c;
     border-bottom-color: black;
 }
 
  /*banner*/
- .page-content .page-banner {
+.pagecontent .page-banner {
     margin-top: 2%;
 }
 .page-banner img {
@@ -140,29 +140,29 @@ nav ul li:hover {
 }
 
 /*content parcour pro*/
-.page-content .parcour-pro{
+.pagecontent .parcour-pro{
     margin-top: 6%;
 }
-.page-content .parcour-pro h1 {
+.pagecontent .parcour-pro h1 {
     font-family: 'Lato' , sans-serif;
     text-transform: uppercase;
     font-size: 3vw;
 }
-.page-content .parcour-pro .Parcour {
+.pagecontent .parcour-pro .Parcour {
     display: flex;
     flex-wrap: wrap;
 }
-.page-content .parcour-pro .Parcour .Parcour {
+.pagecontent .parcour-pro .Parcour .Parcour {
     margin-right: 25px;
     max-width: 350px;
 }
-.page-content .parcour-pro .Parcour .Parcour h4 {
+.pagecontent .parcour-pro .Parcour .Parcour h4 {
     margin: 0;
 }
-.page-content .parcour-pro .Parcour .Parcour .description {
+.pagecontent .parcour-pro .Parcour .Parcour .description {
     font-size: 12px;
 }
-.page-content .parcour-pro .Parcour .Parcour .date {
+.pagecontent .parcour-pro .Parcour .Parcour .date {
     font-size: 13px; 
     color: #7c7c7c;
 }
