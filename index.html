@@ -1,65 +1,213 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <div class="background"></div>
-    <h1 class="Lachkar-Bilal">Lachkar Bilal</h1>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profil.html">Profil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="parcours-professionnel.html">
-                Parcours Professionnel
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="formations.html">Formations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="CV.pdf">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://linktr.ee/lachkarbilal">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="info-container">
-      <div class="nom-info">Petite information :</div>
-      <div class="info"> Info sur moi
-        <p>Je m'appelle Lachkar Bilal,j’ai 18 ans je suis au lycée gustave ferrié dans le 10éme arrondissement.</p>
-      </div>
-      <div class="nom-info2">Mon portfolio :</div>
-      <div class="info2"> Le but
-        <p>Ce port folio à été créer dans le but de montrer mon expérience pendant mes deux ans de lycée. <br> 
-      </div>
-    </div>
-  </div>
-    <div class="arrow"></div>
-  </body>
-</html>
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url("https://lauraeddy.com.au/wp-content/uploads/2022/05/laura-eddy-website-hero-image-2022.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Lachkar-Bilal {
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Modak", cursive;
+  color: black;
+  text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.nom-info {
+  top: 110vh;
+
+  font-size: 1.5rem;
+
+  font-weight: 100;
+
+  font-family: "Inder";
+
+  color: black;
+
+  left: 3%;
+
+  position: absolute;
+}
+
+.info {
+  font-family: "Inder";
+
+  color: black;
+
+  top: -15vh;
+
+  left: 15%;
+
+  position: relative;
+}
+
+.nom-info2 {
+  top: 119vh;
+
+  font-size: 1.5rem;
+
+  font-weight: 100;
+
+  font-family: "Inder";
+
+  color: black;
+
+  left: 3.2%;
+
+  position: absolute;
+}
+
+.info2 {
+  font-family: "Inder";
+
+  color: black;
+
+  top: -13vh;
+
+  left: 15.7%;
+
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+
+  top: 44vw;
+
+  left: 50vw;
+
+  display: inline-block;
+
+  border-left: 30px solid transparent;
+
+  border-right: 30px solid transparent;
+
+  border-top: 50px solid black;
+
+  animation: arrow-animation 2s infinite linear;
+
+  z-index: 0;
+}
+
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow.up {
+  bottom: auto;
+
+  top: 5rem;
+
+  border-top: 0;
+
+  border-bottom: 50px solid black;
+}
+
+.arrow.up:after {
+  top: -50px;
+
+  border-top: 0;
+
+  border-bottom: 50px solid white;
+}
+
+nav {
+  position: absolute;
+
+  bottom: 1vh;
+
+  left: 0;
+
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  backdrop-filter: blur(10px);
+
+  padding: 1rem;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+
+  margin: 0; /* Modification de la marge de la liste */
+
+  padding: 0; /* Modification du remplissage de la liste */
+}
+
+nav ul li {
+  display: inline;
+
+  margin-right: 10px; /* Modification de l'espacement entre les éléments de la liste */
+}
+
+nav ul li a {
+  text-decoration: none;
+
+  color: black;
+
+  font-family: "Modak";
+
+  font-size: 1.5rem;
+}
+.nav-link:not(:first-child) {
+  color: #ccc;
+}
+
+.nav-link-custom {
+  color: #ccc;
+}
+
+.info {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  margin-top: 15rem;
+}
+
+.info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: #000;
+}
