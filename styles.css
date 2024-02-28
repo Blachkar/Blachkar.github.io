@@ -94,9 +94,9 @@ body {
 .arrow {
   position: absolute;
 
-  top: 1200px; /* Positionnement vertical de la flèche */
+  top: 44vw;
 
-  left: 50%;
+  left: 50vw;
 
   display: inline-block;
 
@@ -146,7 +146,7 @@ body {
 nav {
   position: absolute;
 
-  bottom: -10rem;
+  bottom: 1vh;
 
   left: 0;
 
@@ -167,22 +167,27 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+
+  margin: 0; /* Modification de la marge de la liste */
+
+  padding: 0; /* Modification du remplissage de la liste */
 }
 
-nav li {
-  margin: 0 1rem;
+nav ul li {
+  display: inline;
+
+  margin-right: 10px; /* Modification de l'espacement entre les éléments de la liste */
 }
 
-nav a {
-  color: #333;
+nav ul li a {
   text-decoration: none;
-  font-family: "Modak", cursive;
-  font-size: 2rem;
-}
 
+  color: black;
+
+  font-family: "Modak";
+
+  font-size: 1.5rem;
+}
 .nav-link:not(:first-child) {
   color: #ccc;
 }
