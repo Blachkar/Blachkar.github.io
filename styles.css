@@ -31,54 +31,83 @@ body {
 
 .container {
   display: flex;
+
   justify-content: space-between;
 }
 
 .nom-info {
-  top: 1630px;
-  font-size: 2rem;
+  top: 126vh;
+
+  font-size: 1.5rem;
+
   font-weight: 100;
+
   font-family: "Inder";
+
   color: black;
+
   left: 3%;
+
   position: absolute;
 }
 
 .info {
   font-family: "Inder";
+
   color: black;
-  margin-top: 2rem;
+
+  margin-top: 2vw;
+
   left: 15%;
+
   position: relative;
 }
 
 .nom-info2 {
-  top: 1742px;
-  font-size: 2rem;
+  top: 136vh;
+
+  font-size: 1.5rem;
+
   font-weight: 100;
+
   font-family: "Inder";
+
   color: black;
+
   left: 3%;
+
   position: absolute;
 }
 
 .info2 {
   font-family: "Inder";
+
   color: black;
-  margin-top: 2rem;
+
+  margin-top: 2vw;
+
   left: 15%;
+
   position: relative;
 }
 
 .arrow {
   position: absolute;
+
   top: 1200px; /* Positionnement vertical de la flèche */
+
   left: 50%;
+
   display: inline-block;
+
   border-left: 30px solid transparent;
+
   border-right: 30px solid transparent;
+
   border-top: 50px solid black;
+
   animation: arrow-animation 2s infinite linear;
+
   z-index: 0;
 }
 
@@ -98,27 +127,41 @@ body {
 
 .arrow.up {
   bottom: auto;
+
   top: 5rem;
+
   border-top: 0;
+
   border-bottom: 50px solid black;
 }
 
 .arrow.up:after {
   top: -50px;
+
   border-top: 0;
+
   border-bottom: 50px solid white;
 }
 
 nav {
   position: absolute;
+
   bottom: -10rem;
+
   left: 0;
+
   width: 100%;
+
   background-color: rgba(255, 255, 255, 0.5);
+
   backdrop-filter: blur(10px);
+
   padding: 1rem;
+
   display: flex;
+
   justify-content: space-between;
+
   z-index: 1;
 }
 
