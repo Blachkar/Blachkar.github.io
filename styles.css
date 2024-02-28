@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .Lachkar-Bilal {
@@ -28,18 +29,71 @@ body {
   z-index: 1;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nom-info {
+  top: 1630px;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: "Inder";
+  color: black;
+  left: 3%;
+  position: absolute;
+}
+
+.info {
+  font-family: "Inder";
+  color: black;
+  margin-top: 2rem;
+  left: 15%;
+  position: relative;
+}
+
+.nom-info2 {
+  top: 1742px;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: "Inder";
+  color: black;
+  left: 3%;
+  position: absolute;
+}
+
+.info2 {
+  font-family: "Inder";
+  color: black;
+  margin-top: 2rem;
+  left: 15%;
+  position: relative;
+}
+
 .arrow {
-  position: sticky;
-  bottom: 15rem;
+  position: absolute;
+  top: 1200px; /* Positionnement vertical de la flèche */
   left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
+  display: inline-block;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-top: 50px solid black;
-  animation: arrow-animation 2s infinite;
+  animation: arrow-animation 2s infinite linear;
   z-index: 0;
+}
+
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .arrow.up {
@@ -53,18 +107,6 @@ body {
   top: -50px;
   border-top: 0;
   border-bottom: 50px solid white;
-}
-
-@keyframes arrow-animation {
-  0% {
-    bottom: 5rem;
-  }
-  50% {
-    bottom: 10rem;
-  }
-  100% {
-    bottom: 5rem;
-  }
 }
 
 nav {
@@ -98,19 +140,26 @@ nav a {
   font-size: 2rem;
 }
 
-nav a:hover {
-  color: #000;
-}
-
-nav a:first-child {
+.nav-link:not(:first-child) {
   color: #ccc;
-  pointer-events: none;
 }
 
-nav a:not(:first-child) {
+.nav-link-custom {
+  color: #ccc;
+}
+
+.info {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  margin-top: 15rem;
+}
+
+.info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.info a:hover {
   color: #000;
-}
-
-p {
-  display: none;
 }
